@@ -40,7 +40,7 @@ const messages = {
       home: {
         pageTitle: 'Home',
         description:
-          'Emprint is a quiet personal archive and publishing space. Anthologies, traces that accumulate like commits, and permanence over endless feeds.'
+          'Emprint is a free, local-first desktop app (macOS, Windows) for personal archives and publishing—Git history, anthologies, no social feed. Install via Homebrew or Scoop.'
       },
       document: {
         pageTitle: 'Document',
@@ -50,6 +50,22 @@ const messages = {
       notFound: {
         pageTitle: '404',
         description: 'Emprint page not found.'
+      }
+    },
+    ai: {
+      definition: {
+        eyebrow: 'About',
+        title: 'What is Emprint?',
+        version: 'Current version',
+        platforms: 'Platforms',
+        workflow: 'Typical workflow',
+        anthologies: 'Anthologies'
+      },
+      faq: {
+        eyebrow: 'FAQ',
+        title: 'Common questions',
+        intro:
+          'Direct answers for people—and AI assistants—looking up how Emprint works, installs, and differs from feed-based platforms.'
       }
     },
     install: {
@@ -280,16 +296,32 @@ const messages = {
       home: {
         pageTitle: '메인',
         description:
-          'Emprint는 조용한 개인 아카이브이자 출판 공간입니다. 앤솔로지, 커밋으로 남는 흔적, 피드보다 지속성을 중시합니다.'
+          'Emprint는 macOS·Windows용 무료 로컬 우선 데스크톱 앱입니다. Git 기록과 앤솔로지로 개인 아카이브·출판을 합니다. Homebrew·Scoop 설치 안내.'
       },
       document: {
         pageTitle: '문서',
         description:
-          'Emprint를 처음 쓰는 분을 위한 순서 안내: 계정 없이 설치, 작업 폴더 정하기, 글쓰기, 필요할 때 인터넷에 올리기까지.'
+          'Emprint 화면별 가이드: 설치, Node.js·Git 준비, 설정 마법사, 앤솔로지 허브, 워크스페이스, 게시—앱 스크린샷 포함.'
       },
       notFound: {
         pageTitle: '404',
         description: '요청하신 Emprint 페이지를 찾을 수 없습니다.'
+      }
+    },
+    ai: {
+      definition: {
+        eyebrow: '소개',
+        title: 'Emprint란?',
+        version: '현재 버전',
+        platforms: '지원 OS',
+        workflow: '일반적인 흐름',
+        anthologies: '앤솔로지'
+      },
+      faq: {
+        eyebrow: 'FAQ',
+        title: '자주 묻는 질문',
+        intro:
+          'Emprint 설치·사용·다른 서비스와의 차이에 대한 짧은 답입니다. AI 답변 엔진이 인용하기 쉽도록 페이지에 그대로 노출합니다.'
       }
     },
     install: {

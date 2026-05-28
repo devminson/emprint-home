@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://devminson.github.io/emprint-home/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devminson.github.io/emprint-home/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://devminson.github.io/emprint-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devminson.github.io/emprint-home/" />
+  </url>
+  <url>
+    <loc>https://devminson.github.io/emprint-home/ko/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devminson.github.io/emprint-home/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://devminson.github.io/emprint-home/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devminson.github.io/emprint-home/" />
+  </url>
+  <url>
+    <loc>https://devminson.github.io/emprint-home/document/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devminson.github.io/emprint-home/document/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://devminson.github.io/emprint-home/ko/document/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devminson.github.io/emprint-home/document/" />
+  </url>
+  <url>
+    <loc>https://devminson.github.io/emprint-home/ko/document/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devminson.github.io/emprint-home/document/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://devminson.github.io/emprint-home/ko/document/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devminson.github.io/emprint-home/document/" />
+  </url>
+</urlset>

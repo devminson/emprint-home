@@ -37,7 +37,7 @@ export default function InstallGuide({
   showLead = true,
   sectionId = 'install'
 }) {
-  const { messages } = useLocale()
+  const { locale, messages } = useLocale()
   const i = messages.install
   const title = compact ? i.compactTitle : i.pageTitle
 
@@ -59,7 +59,7 @@ export default function InstallGuide({
         </div>
       ) : (
         <p className="install-panel__more">
-          <Link to={hrefWithPrefix('/document/#install')}>{i.documentLink}</Link>
+          <Link to={hrefWithPrefix('/document/#install', locale)}>{i.documentLink}</Link>
         </p>
       )}
     </>

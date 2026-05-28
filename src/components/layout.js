@@ -4,58 +4,64 @@ import '@fontsource/jetbrains-mono'
 import '../styles/global.css'
 import siteData from '../data/site'
 import { useLocale } from '../context/locale-context'
-import LocaleMetaSync from './locale-meta-sync'
+import {
+  alternateLocalePaths,
+  localePath,
+  normalizeSitePath
+} from '../utils/locale-path'
 
-function isActivePath(currentPath, targetPath) {
-  if (targetPath === '/') return currentPath === '/'
-  return currentPath.startsWith(targetPath)
+function isActivePath(currentPath, localizedTarget) {
+  const current = normalizeSitePath(currentPath)
+  const target = normalizeSitePath(localizedTarget)
+  if (target === '/' || target === '/ko') return current === target
+  return current === target || current.startsWith(`${target}/`)
 }
 
-function LocaleSwitcher() {
-  const { locale, setLocale, messages } = useLocale()
+function LocaleSwitcher({ currentPath }) {
+  const { locale, messages } = useLocale()
   const c = messages.common
+  const alternates = alternateLocalePaths(currentPath)
 
   return (
     <div className="locale-toggle" role="group" aria-label={c.localeSwitcherLabel}>
-      <button
-        type="button"
+      <Link
         className={`locale-toggle__btn ${locale === 'en' ? 'is-active' : ''}`}
-        onClick={() => setLocale('en')}
-        aria-pressed={locale === 'en'}
+        to={alternates.en}
+        hrefLang="en"
+        aria-current={locale === 'en' ? 'page' : undefined}
       >
         {c.localeEn}
-      </button>
-      <button
-        type="button"
+      </Link>
+      <Link
         className={`locale-toggle__btn ${locale === 'ko' ? 'is-active' : ''}`}
-        onClick={() => setLocale('ko')}
-        aria-pressed={locale === 'ko'}
+        to={alternates.ko}
+        hrefLang="ko"
+        aria-current={locale === 'ko' ? 'page' : undefined}
       >
         {c.localeKo}
-      </button>
+      </Link>
     </div>
   )
 }
 
 export default function Layout({ children, currentPath = '/' }) {
   const logoSrc = withPrefix('/assets/images/emprint-simple-logo.svg')
-  const { messages } = useLocale()
+  const { locale, messages } = useLocale()
   const c = messages.common
 
   const navItems = [
-    { label: c.navMain, to: '/' },
-    { label: c.navDocument, to: '/document/' }
+    { label: c.navMain, to: localePath(locale, '/') },
+    { label: c.navDocument, to: localePath(locale, '/document/') }
   ]
 
   return (
-    <div className="app-shell">
-      <LocaleMetaSync pathname={currentPath} />
+    <div className="app-shell" lang={locale}>
       <a className="skip-link" href="#content">
         {c.skipToContent}
       </a>
       <header className="site-header">
         <div className="site-header__inner">
-          <Link className="brand-lockup" to="/">
+          <Link className="brand-lockup" to={localePath(locale, '/')}>
             <img className="brand-lockup__logo" src={logoSrc} alt="Emprint" />
             <div>
               <div className="brand-lockup__title">Emprint</div>
@@ -63,7 +69,7 @@ export default function Layout({ children, currentPath = '/' }) {
             </div>
           </Link>
           <div className="site-header__tools">
-            <LocaleSwitcher />
+            <LocaleSwitcher currentPath={currentPath} />
             <nav className="site-nav" aria-label="Primary">
               {navItems.map((item) => (
                 <Link
@@ -104,7 +110,7 @@ export default function Layout({ children, currentPath = '/' }) {
             >
               {c.footerSupport}
             </a>
-            <Link to="/document/">{c.footerDocument}</Link>
+            <Link to={localePath(locale, '/document/')}>{c.footerDocument}</Link>
             <a href={siteData.githubRepoUrl} target="_blank" rel="noreferrer">
               {c.footerRepo}
             </a>
