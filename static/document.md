@@ -6,7 +6,7 @@
 - Last updated: 2026-05-19
 ## 1. Install the app
 
-Emprint 0.2.10 supports recent Mac computers (Apple or Intel chip) and 64-bit Windows. Install with Homebrew or Scoop when you can.
+Emprint 0.3.0 supports recent Mac computers (Apple or Intel chip) and 64-bit Windows. Install with Homebrew or Scoop when you can.
 
 You can install without creating an online account first. You will only need a free GitHub account later when you back up or publish. Use the command blocks in the Install section on the home page (recommended); direct installers are listed there only if you need them. On Mac, direct downloads are .pkg installers with a post-install step that helps with Gatekeeper on unsigned open-source builds.
 
@@ -76,9 +76,9 @@ Screenshot: wizard-05-hub.png
 
 ## 5. Anthology hub
 
-After setup, the hub is home base: pick an anthology or create a new Column or Memoir site.
+After setup, the hub is home base: pick an anthology or create a new site (Column, Memoir, Dictionary, Fragments, or Book).
 
-Creating a Column anthology opens the workspace tour in the next section.
+Creating a Column anthology opens the workspace tour in the next section; other formats use their own sidebar sections.
 
 ### 5.1 Anthology list
 
@@ -88,7 +88,7 @@ Screenshot: hub-anthologies.png
 
 ### 5.2 Create a new anthology
 
-The create panel asks for format (Column or Memoir), title, description, and GitHub repository details. Column is the blog-style flow shown in the following screens.
+The create panel asks for format (Column, Memoir, Dictionary, Fragments, or Book), title, description, and GitHub repository details. The screens below follow a Column (blog-style) workflow.
 
 Screenshot: hub-create-panel.png
 

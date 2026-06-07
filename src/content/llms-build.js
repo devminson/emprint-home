@@ -101,7 +101,7 @@ ${f.definition}
 
 ## Who is it for?
 
-Writers, photographers, designers, developers, and anyone who wants a durable personal archive—not a social feed. No coding background is required to start; developers can use Blank anthologies for custom layouts.
+Writers, photographers, designers, developers, and anyone who wants a durable personal archive—not a social feed. No coding background is required to start; Book anthologies suit long-form stories with paginated reading.
 
 ## Platforms
 

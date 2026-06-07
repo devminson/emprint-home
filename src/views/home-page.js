@@ -154,9 +154,9 @@ export default function HomePageView({ location }) {
             <p className="duo-panels__body">{L.fragments.body}</p>
           </article>
           <article className="panel duo-panels__card">
-            <span className="section-heading__eyebrow">{L.blank.eyebrow}</span>
-            <h2 className="editorial-section__title editorial-section__title--tight">{L.blank.title}</h2>
-            <p className="duo-panels__body">{L.blank.body}</p>
+            <span className="section-heading__eyebrow">{L.book.eyebrow}</span>
+            <h2 className="editorial-section__title editorial-section__title--tight">{L.book.title}</h2>
+            <p className="duo-panels__body">{L.book.body}</p>
           </article>
         </section>
 

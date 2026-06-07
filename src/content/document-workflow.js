@@ -5,7 +5,7 @@ const installSectionEn = {
   navLabel: 'Install',
   title: 'Install the app',
   summary:
-    'Emprint 0.2.10 supports recent Mac computers (Apple or Intel chip) and 64-bit Windows. Install with Homebrew or Scoop when you can.',
+    'Emprint 0.3.0 supports recent Mac computers (Apple or Intel chip) and 64-bit Windows. Install with Homebrew or Scoop when you can.',
   body:
     'You can install without creating an online account first. You will only need a free GitHub account later when you back up or publish. Use the command blocks in the Install section on the home page (recommended); direct installers are listed there only if you need them. On Mac, direct downloads are .pkg installers with a post-install step that helps with Gatekeeper on unsigned open-source builds.',
   bullets: [
@@ -20,7 +20,7 @@ const installSectionKo = {
   navLabel: '설치',
   title: '앱 설치하기',
   summary:
-    'Emprint 0.2.10은 최근 맥(M1 등 Apple 칩 또는 Intel)과 64비트 Windows에서 실행됩니다. 가능하면 Homebrew·Scoop으로 설치하세요.',
+    'Emprint 0.3.0은 최근 맥(M1 등 Apple 칩 또는 Intel)과 64비트 Windows에서 실행됩니다. 가능하면 Homebrew·Scoop으로 설치하세요.',
   body:
     '온라인 계정 없이도 설치할 수 있습니다. 나중에 백업·게시할 때 무료 GitHub 계정이 필요할 수 있습니다. 홈의 설치 명령(권장)을 쓰고, 직접 설치 파일은 필요할 때만 사용하세요. 맥 직접 다운로드는 Gatekeeper 보조용 post-install이 포함된 .pkg입니다.',
   bullets: [
@@ -180,7 +180,7 @@ const hubStepsEn = [
     id: 'h-create',
     image: 'hub-create-panel.png',
     title: 'Create a new anthology',
-    body: 'The create panel asks for format (Column or Memoir), title, description, and GitHub repository details. Column is the blog-style flow shown in the following screens.',
+    body: 'The create panel asks for format (Column, Memoir, Dictionary, Fragments, or Book), title, description, and GitHub repository details. The screens below follow a Column (blog-style) workflow.',
     alt: 'Emprint create new anthology panel'
   }
 ]
@@ -197,7 +197,7 @@ const hubStepsKo = [
     id: 'h-create',
     image: 'hub-create-panel.png',
     title: '새 앤솔로지 만들기',
-    body: '형식(Column·Memoir), 제목, 설명, GitHub 저장소 정보를 입력합니다. 아래 화면은 Column(블로그형) 기준입니다.',
+    body: '형식(Column·Memoir·Dictionary·Fragments·Book), 제목, 설명, GitHub 저장소 정보를 입력합니다. 아래 화면은 Column(블로그형) 기준입니다.',
     alt: 'Emprint 새 앤솔로지 만들기 패널'
   }
 ]
@@ -475,8 +475,8 @@ export const documentSectionsEn = [
     navLabel: 'Anthology hub',
     title: 'Anthology hub',
     summary:
-      'After setup, the hub is home base: pick an anthology or create a new Column or Memoir site.',
-    body: 'Creating a Column anthology opens the workspace tour in the next section.',
+      'After setup, the hub is home base: pick an anthology or create a new site (Column, Memoir, Dictionary, Fragments, or Book).',
+    body: 'Creating a Column anthology opens the workspace tour in the next section; other formats use their own sidebar sections.',
     steps: hubStepsEn
   },
   {
@@ -525,8 +525,9 @@ export const documentSectionsKo = [
     id: 'hub',
     navLabel: '앤솔로지 허브',
     title: '앤솔로지 허브',
-    summary: '설정 후 허브에서 앤솔로지를 열거나 새로 만듭니다.',
-    body: 'Column 앤솔로지를 만들면 다음 섹션의 워크스페이스로 들어갑니다.',
+    summary:
+      '설정 후 허브에서 앤솔로지를 열거나 새로 만듭니다(Column·Memoir·Dictionary·Fragments·Book).',
+    body: 'Column 앤솔로지를 만들면 다음 섹션의 워크스페이스로 들어갑니다. 다른 형식은 각자의 사이드바 섹션을 사용합니다.',
     steps: hubStepsKo
   },
   {

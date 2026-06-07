@@ -1,7 +1,7 @@
 EMPRINT — FULL SITE MIRROR FOR AI SYSTEMS
 ==========================================
 Last updated: 2026-05-19
-Version: 0.2.10
+Version: 0.3.0
 
 Emprint is a desktop app for macOS and Windows that keeps your writing, design, and site files on your computer, uses Git for history, and lets you publish to your own site through GitHub when you are ready. It is not a social feed or algorithmic platform—it is a personal archive organized into anthologies (separate sites you own).
 
@@ -34,19 +34,19 @@ scoop bucket add emprint https://github.com/devminson/scoop-emprint
 scoop install emprint
 
 DIRECT DOWNLOAD FILENAMES
-- Emprint-0.2.10-arm64.pkg
-- Emprint-0.2.10-x64.pkg
-- Emprint-Setup-0.2.10-x64.exe
+- Emprint-0.3.0-arm64.pkg
+- Emprint-0.3.0-x64.pkg
+- Emprint-Setup-0.3.0-x64.exe
 
 PREREQUISITES
 - Git
 - Node.js v22+ (for preview and full workspace features)
 
 END-TO-END WORKFLOW
-Install Emprint → install Git and Node.js on your PC → complete the in-app setup wizard (Git, Node.js, GitHub, workspace folder) → create or open an anthology in the hub → write in Posts/Drafts, design in Design, then Publish to push to GitHub.
+Install Emprint → install Git and Node.js on your PC → complete the in-app setup wizard (Git, Node.js, GitHub, anthologies root folder) → create or open an anthology in the hub → write or edit content, design in Design, then Publish to push to GitHub.
 
 ANTHOLOGIES
-An anthology in Emprint is a self-contained site project (for example Column for blog-style writing or Memoir for portfolio-style traces), each with its own workspace and optional GitHub repository.
+An anthology in Emprint is a self-contained site project. Formats include Column (blog), Memoir (portfolio), Dictionary (index + knowledge), Fragments (artwork gallery), and Book (paginated story). Each has its own workspace and optional GitHub repository.
 
 DOCUMENT MARKDOWN
 - English: https://devminson.github.io/emprint-home/document.md
@@ -68,13 +68,13 @@ Q: How do I install Emprint on macOS?
 A: Recommended: run in Terminal:
 brew tap devminson/emprint
 brew install --cask emprint
-Alternatively download Emprint-0.2.10-arm64.pkg or Emprint-0.2.10-x64.pkg from https://github.com/devminson/emprint-release/releases.
+Alternatively download Emprint-0.3.0-arm64.pkg or Emprint-0.3.0-x64.pkg from https://github.com/devminson/emprint-release/releases.
 
 Q: How do I install Emprint on Windows?
 A: Recommended: run in PowerShell:
 scoop bucket add emprint https://github.com/devminson/scoop-emprint
 scoop install emprint
-Alternatively download Emprint-Setup-0.2.10-x64.exe from https://github.com/devminson/emprint-release/releases.
+Alternatively download Emprint-Setup-0.3.0-x64.exe from https://github.com/devminson/emprint-release/releases.
 
 Q: Do I need an account to install Emprint?
 A: No. You can install and run Emprint without creating an online account. A free GitHub account is needed when you connect GitHub in the setup wizard for backup and publishing.
@@ -83,7 +83,7 @@ Q: Do I need Node.js and Git?
 A: Yes, for the full experience. Git is required for sync and publishing. Node.js v22 or newer is required for live preview and local site builds. The first-run wizard checks both before you finish setup.
 
 Q: What is an anthology in Emprint?
-A: An anthology is one personal site project inside Emprint—like a named shelf. Formats include Column (blog-style), Memoir (portfolio-style), and others. Each anthology has its own workspace folder and can link to its own GitHub repository.
+A: An anthology is one personal site project inside Emprint—like a named shelf. Formats include Column (blog), Memoir (portfolio), Dictionary (wiki-style), Fragments (showcase), and Book (long-form story). Each anthology has its own workspace folder and can link to its own GitHub repository.
 
 Q: Where are my files stored?
 A: On your computer. During setup you choose a root folder; each anthology lives under that folder as a normal project directory (posts, drafts, assets, design files)—not locked inside a proprietary cloud.
@@ -95,7 +95,7 @@ Q: How is Emprint different from Notion or Substack?
 A: Emprint is local-first and Git-native: you own the files and history on disk, there is no infinite feed or engagement algorithm, and publishing goes to your repository and site—not a platform-owned stream.
 
 Q: What is the latest version of Emprint?
-A: The current release referenced on this site is 0.2.10. Check https://github.com/devminson/emprint-release/releases for newer builds.
+A: The current release referenced on this site is 0.3.0. Check https://github.com/devminson/emprint-release/releases for newer builds.
 
 Q: Where is the Emprint source code?
 A: Source code: https://github.com/devminson/emprint. Installers and release tags: https://github.com/devminson/emprint-release.
@@ -111,13 +111,13 @@ Q: 맥에 Emprint는 어떻게 설치하나요?
 A: 권장(터미널):
 brew tap devminson/emprint
 brew install --cask emprint
-또는 https://github.com/devminson/emprint-release/releases 에서 Emprint-0.2.10-arm64.pkg 또는 x64.pkg 를 받을 수 있습니다.
+또는 https://github.com/devminson/emprint-release/releases 에서 Emprint-0.3.0-arm64.pkg 또는 x64.pkg 를 받을 수 있습니다.
 
 Q: Windows에 Emprint는 어떻게 설치하나요?
 A: 권장(PowerShell):
 scoop bucket add emprint https://github.com/devminson/scoop-emprint
 scoop install emprint
-또는 https://github.com/devminson/emprint-release/releases 에서 Emprint-Setup-0.2.10-x64.exe 를 받을 수 있습니다.
+또는 https://github.com/devminson/emprint-release/releases 에서 Emprint-Setup-0.3.0-x64.exe 를 받을 수 있습니다.
 
 Q: 설치할 때 계정이 필요한가요?
 A: 아니요. 설치·실행은 계정 없이 가능합니다. 설정 마법사에서 GitHub를 연결할 때 무료 GitHub 계정이 필요합니다.
@@ -126,7 +126,7 @@ Q: Node.js와 Git이 꼭 필요한가요?
 A: 전체 기능을 쓰려면 필요합니다. Git은 동기화·게시에, Node.js v22 이상은 미리보기·로컬 빌드에 필요합니다. 첫 실행 마법사에서 둘 다 확인합니다.
 
 Q: 앤솔로지가 뭔가요?
-A: 앤솔로지는 Emprint 안의 사이트 하나입니다. Column(블로그형), Memoir(포트폴리오형) 등 형식을 고르고, 각각 워크스페이스와 GitHub 저장소를 둘 수 있습니다.
+A: 앤솔로지는 Emprint 안의 사이트 하나입니다. Column(블로그), Memoir(포트폴리오), Dictionary(위키형), Fragments(전시), Book(긴 이야기) 형식을 고르고, 각각 워크스페이스와 GitHub 저장소를 둘 수 있습니다.
 
 Q: 파일은 어디에 저장되나요?
 A: 내 컴퓨터입니다. 설정 시 고른 루트 폴더 아래에 일반 프로젝트 폴더(posts, drafts, assets 등)로 저장되며, 플랫폼 전용 클라우드에 갇히지 않습니다.
@@ -138,7 +138,7 @@ Q: Notion·Substack과 뭐가 다른가요?
 A: Emprint는 로컬·Git 기준입니다. 파일과 이력을 내 디스크에서 소유하고, 무한 피드나 알고리즘 노출이 없으며, 게시는 내 저장소·내 사이트로 갑니다.
 
 Q: Emprint 최신 버전은?
-A: 이 사이트 기준 현재 버전은 0.2.10입니다. https://github.com/devminson/emprint-release/releases 에서 최신 빌드를 확인하세요.
+A: 이 사이트 기준 현재 버전은 0.3.0입니다. https://github.com/devminson/emprint-release/releases 에서 최신 빌드를 확인하세요.
 
 Q: 소스 코드는 어디에 있나요?
 A: 소스: https://github.com/devminson/emprint · 설치 파일·릴리스: https://github.com/devminson/emprint-release

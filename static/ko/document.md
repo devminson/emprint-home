@@ -6,7 +6,7 @@
 - Last updated: 2026-05-19
 ## 1. 앱 설치하기
 
-Emprint 0.2.10은 최근 맥(M1 등 Apple 칩 또는 Intel)과 64비트 Windows에서 실행됩니다. 가능하면 Homebrew·Scoop으로 설치하세요.
+Emprint 0.3.0은 최근 맥(M1 등 Apple 칩 또는 Intel)과 64비트 Windows에서 실행됩니다. 가능하면 Homebrew·Scoop으로 설치하세요.
 
 온라인 계정 없이도 설치할 수 있습니다. 나중에 백업·게시할 때 무료 GitHub 계정이 필요할 수 있습니다. 홈의 설치 명령(권장)을 쓰고, 직접 설치 파일은 필요할 때만 사용하세요. 맥 직접 다운로드는 Gatekeeper 보조용 post-install이 포함된 .pkg입니다.
 
@@ -76,9 +76,9 @@ Screenshot: wizard-05-hub.png
 
 ## 5. 앤솔로지 허브
 
-설정 후 허브에서 앤솔로지를 열거나 새로 만듭니다.
+설정 후 허브에서 앤솔로지를 열거나 새로 만듭니다(Column·Memoir·Dictionary·Fragments·Book).
 
-Column 앤솔로지를 만들면 다음 섹션의 워크스페이스로 들어갑니다.
+Column 앤솔로지를 만들면 다음 섹션의 워크스페이스로 들어갑니다. 다른 형식은 각자의 사이드바 섹션을 사용합니다.
 
 ### 5.1 앤솔로지 목록
 
@@ -88,7 +88,7 @@ Screenshot: hub-anthologies.png
 
 ### 5.2 새 앤솔로지 만들기
 
-형식(Column·Memoir), 제목, 설명, GitHub 저장소 정보를 입력합니다. 아래 화면은 Column(블로그형) 기준입니다.
+형식(Column·Memoir·Dictionary·Fragments·Book), 제목, 설명, GitHub 저장소 정보를 입력합니다. 아래 화면은 Column(블로그형) 기준입니다.
 
 Screenshot: hub-create-panel.png
 

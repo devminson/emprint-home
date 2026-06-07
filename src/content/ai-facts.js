@@ -50,9 +50,9 @@ export const aiFactsEn = {
   definition:
     'Emprint is a desktop app for macOS and Windows that keeps your writing, design, and site files on your computer, uses Git for history, and lets you publish to your own site through GitHub when you are ready. It is not a social feed or algorithmic platform—it is a personal archive organized into anthologies (separate sites you own).',
   anthologies:
-    'An anthology in Emprint is a self-contained site project (for example Column for blog-style writing or Memoir for portfolio-style traces), each with its own workspace and optional GitHub repository.',
+    'An anthology in Emprint is a self-contained site project. Formats include Column (blog), Memoir (portfolio), Dictionary (index + knowledge), Fragments (artwork gallery), and Book (paginated story). Each has its own workspace and optional GitHub repository.',
   workflowOrder:
-    'Install Emprint → install Git and Node.js on your PC → complete the in-app setup wizard (Git, Node.js, GitHub, workspace folder) → create or open an anthology in the hub → write in Posts/Drafts, design in Design, then Publish to push to GitHub.',
+    'Install Emprint → install Git and Node.js on your PC → complete the in-app setup wizard (Git, Node.js, GitHub, anthologies root folder) → create or open an anthology in the hub → write or edit content, design in Design, then Publish to push to GitHub.',
   faq: [
     {
       id: 'what-is-emprint',
@@ -92,7 +92,7 @@ export const aiFactsEn = {
       id: 'what-is-anthology',
       question: 'What is an anthology in Emprint?',
       answer:
-        'An anthology is one personal site project inside Emprint—like a named shelf. Formats include Column (blog-style), Memoir (portfolio-style), and others. Each anthology has its own workspace folder and can link to its own GitHub repository.'
+        'An anthology is one personal site project inside Emprint—like a named shelf. Formats include Column (blog), Memoir (portfolio), Dictionary (wiki-style), Fragments (showcase), and Book (long-form story). Each anthology has its own workspace folder and can link to its own GitHub repository.'
     },
     {
       id: 'where-files',
@@ -132,9 +132,9 @@ export const aiFactsKo = {
   definition:
     'Emprint는 macOS·Windows용 데스크톱 앱으로, 글·디자인·사이트 파일을 내 컴퓨터에 두고 Git으로 기록을 남기며, 준비되면 GitHub로 내 사이트에 게시할 수 있습니다. SNS 피드가 아니라, 내가 고른 흔적을 앤솔로지(각각 내 홈페이지가 되는 프로젝트)로 쌓는 공간입니다.',
   anthologies:
-    '앤솔로지는 Emprint 안의 하나의 사이트 프로젝트입니다(예: Column 블로그형, Memoir 포트폴리오형). 각각 워크스페이스와 GitHub 저장소를 가질 수 있습니다.',
+    '앤솔로지는 Emprint 안의 하나의 사이트 프로젝트입니다. 형식: Column(블로그), Memoir(포트폴리오), Dictionary(색인·지식), Fragments(작품 전시), Book(페이지 나눈 이야기). 각각 워크스페이스와 GitHub 저장소를 가질 수 있습니다.',
   workflowOrder:
-    'Emprint 설치 → PC에 Git·Node.js 설치 → 앱 설정 마법사(Git, Node.js, GitHub, 작업 폴더) → 허브에서 앤솔로지 만들기/열기 → Posts·Drafts에서 글쓰기, Design에서 꾸미기 → Publish로 GitHub에 올리기.',
+    'Emprint 설치 → PC에 Git·Node.js 설치 → 앱 설정 마법사(Git, Node.js, GitHub, 앤솔로지 루트 폴더) → 허브에서 앤솔로지 만들기/열기 → 글·콘텐츠 편집, Design에서 꾸미기 → Publish로 GitHub에 올리기.',
   faq: [
     {
       id: 'what-is-emprint',
@@ -174,7 +174,7 @@ export const aiFactsKo = {
       id: 'what-is-anthology',
       question: '앤솔로지가 뭔가요?',
       answer:
-        '앤솔로지는 Emprint 안의 사이트 하나입니다. Column(블로그형), Memoir(포트폴리오형) 등 형식을 고르고, 각각 워크스페이스와 GitHub 저장소를 둘 수 있습니다.'
+        '앤솔로지는 Emprint 안의 사이트 하나입니다. Column(블로그), Memoir(포트폴리오), Dictionary(위키형), Fragments(전시), Book(긴 이야기) 형식을 고르고, 각각 워크스페이스와 GitHub 저장소를 둘 수 있습니다.'
     },
     {
       id: 'where-files',

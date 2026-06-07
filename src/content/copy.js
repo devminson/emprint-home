@@ -177,10 +177,10 @@ const messages = {
             text: 'Sketches, photos, impressions. SHOWCASE.'
           },
           {
-            id: 'blank',
-            name: 'Blank',
-            mood: 'Traces you shape freely',
-            text: 'For code-led stories and experimental layouts—without leaving this archive.'
+            id: 'book',
+            name: 'Book',
+            mood: 'Traces of narrative',
+            text: 'One long story with page breaks—read like a book, not a feed. STORY.'
           }
         ]
       },
@@ -190,11 +190,11 @@ const messages = {
         body:
           'Like records catching the light on a shelf, Fragments asks for slow looking—memory and attention—instead of endless scrolling.'
       },
-      blank: {
-        eyebrow: 'Blank',
-        title: 'Freedom without leaving Emprint.',
+      book: {
+        eyebrow: 'Book',
+        title: 'A story that turns pages—not posts.',
         body:
-          'Blank is for developers and technical makers who want full control over expression. Emprint lowers the threshold for newcomers without removing the ceiling for people who still want to build the page by hand.'
+          'Book keeps one markdown story with `---` page breaks so readers move through chapters. Design still applies—palette, layout, and a floating theme toggle on the published site.'
       },
       quiet: {
         eyebrow: 'PHILOSOPHY',
@@ -435,10 +435,10 @@ const messages = {
             text: '스케치, 사진, 인상. SHOWCASE'
           },
           {
-            id: 'blank',
-            name: 'Blank',
-            mood: '자유롭게 남길 흔적',
-            text: '코드로 이야기하고 실험 레이아웃을 쌓을 이들을 위해.'
+            id: 'book',
+            name: 'Book',
+            mood: '이야기의 흔적',
+            text: '페이지를 넘기듯 읽는 한 편의 글. STORY.'
           }
         ]
       },
@@ -448,11 +448,11 @@ const messages = {
         body:
           '빛이 닿는 선반에 LP를 늘인 것처럼, Fragments는 빠른 스크롤보다 눈과 기억에 담아주기를 청합니다.'
       },
-      blank: {
-        eyebrow: 'Blank',
-        title: 'Emprint에서도 떠나지 않을 자유.',
+      book: {
+        eyebrow: 'Book',
+        title: '포스트가 아니라, 페이지를 넘기는 이야기.',
         body:
-          'Blank는 표현의 통제를 원하는 개발자·기술 창작자를 환영합니다. Emprint는 문턱을 낮추되, 손으로 페이지를 짜고 싶은 이들의 천장은 걷지 않습니다.'
+          'Book은 `---`로 페이지를 나눈 하나의 마크다운 이야기를 담습니다. Design에서 팔레트·레이아웃을 고르고, 배포된 사이트에서는 플로팅 테마 버튼으로 읽기 모드를 바꿀 수 있습니다.'
       },
       quiet: {
         eyebrow: 'PHILOSOPHY',
