@@ -13,4 +13,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://devminson.github.io/emprint-home/sitemap.xml
+Sitemap: https://devminson.github.io/emprint-home/sitemap-index.xml

@@ -231,40 +231,7 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: ${absoluteUrl('/sitemap.xml')}
-`
-}
-
-function buildSitemapXml() {
-  const urls = getCanonicalUrls()
-  const pairs = [
-    { en: urls.homeEn, ko: urls.homeKo },
-    { en: urls.documentEn, ko: urls.documentKo }
-  ]
-
-  const entries = pairs
-    .map(
-      ({ en, ko }) => `  <url>
-    <loc>${en}</loc>
-    <lastmod>${AI_LAST_UPDATED}</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="${en}" />
-    <xhtml:link rel="alternate" hreflang="ko" href="${ko}" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="${en}" />
-  </url>
-  <url>
-    <loc>${ko}</loc>
-    <lastmod>${AI_LAST_UPDATED}</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="${en}" />
-    <xhtml:link rel="alternate" hreflang="ko" href="${ko}" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="${en}" />
-  </url>`
-    )
-    .join('\n')
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${entries}
-</urlset>
+Sitemap: ${absoluteUrl('/sitemap-index.xml')}
 `
 }
 
@@ -277,7 +244,6 @@ export async function buildLlmsArtifacts(staticDir) {
   fs.writeFileSync(path.join(staticDir, 'llms.txt'), buildLlmsTxt(aiFactsEn), 'utf8')
   fs.writeFileSync(path.join(staticDir, 'llms-full.txt'), await buildLlmsFullTxt(), 'utf8')
   fs.writeFileSync(path.join(staticDir, 'robots.txt'), buildRobotsTxt(), 'utf8')
-  fs.writeFileSync(path.join(staticDir, 'sitemap.xml'), buildSitemapXml(), 'utf8')
   fs.writeFileSync(path.join(staticDir, 'document.md'), buildDocumentMarkdown('en'), 'utf8')
   fs.writeFileSync(path.join(staticDir, 'ko', 'document.md'), buildDocumentMarkdown('ko'), 'utf8')
 }

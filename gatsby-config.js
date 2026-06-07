@@ -8,5 +8,17 @@ module.exports = {
   },
   pathPrefix: '/emprint-home',
   trailingSlash: 'always',
-  graphqlTypegen: false
+  graphqlTypegen: false,
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        excludes: ['/404/'],
+        serialize: ({ path }) => ({
+          url: path,
+          lastmod: new Date().toISOString().slice(0, 10)
+        })
+      }
+    }
+  ]
 }
