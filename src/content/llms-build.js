@@ -215,26 +215,6 @@ END OF MIRROR
 `
 }
 
-function buildRobotsTxt() {
-  return `User-agent: *
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-Sitemap: ${absoluteUrl('/sitemap-index.xml')}
-`
-}
-
 /** Write AI/crawler artifacts into static/ before Gatsby copies them to public/. */
 export async function buildLlmsArtifacts(staticDir) {
   const { aiFactsEn } = await import('./ai-facts.js')
@@ -243,7 +223,6 @@ export async function buildLlmsArtifacts(staticDir) {
 
   fs.writeFileSync(path.join(staticDir, 'llms.txt'), buildLlmsTxt(aiFactsEn), 'utf8')
   fs.writeFileSync(path.join(staticDir, 'llms-full.txt'), await buildLlmsFullTxt(), 'utf8')
-  fs.writeFileSync(path.join(staticDir, 'robots.txt'), buildRobotsTxt(), 'utf8')
   fs.writeFileSync(path.join(staticDir, 'document.md'), buildDocumentMarkdown('en'), 'utf8')
   fs.writeFileSync(path.join(staticDir, 'ko', 'document.md'), buildDocumentMarkdown('ko'), 'utf8')
 }

@@ -1,5 +1,13 @@
 const siteUrl = process.env.GATSBY_SITE_URL || 'https://devminson.github.io/emprint-home'
 
+const crawlerPolicies = [
+  { userAgent: '*', allow: '/' },
+  { userAgent: 'GPTBot', allow: '/' },
+  { userAgent: 'ChatGPT-User', allow: '/' },
+  { userAgent: 'Claude-Web', allow: '/' },
+  { userAgent: 'PerplexityBot', allow: '/' }
+]
+
 module.exports = {
   siteMetadata: {
     title: 'Emprint',
@@ -10,6 +18,14 @@ module.exports = {
   trailingSlash: 'always',
   graphqlTypegen: false,
   plugins: [
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteUrl,
+        sitemap: `${siteUrl}/sitemap-index.xml`,
+        policy: crawlerPolicies
+      }
+    },
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
