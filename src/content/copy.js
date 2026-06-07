@@ -45,7 +45,7 @@ const messages = {
       document: {
         pageTitle: 'Document',
         description:
-          'Screen-by-screen Emprint guide: install, setup wizard, anthology hub, workspace, and publish—with screenshots from the app.'
+          'Screen-by-screen Emprint guide: install, setup wizard, anthology hub, and Column/Memoir/Dictionary/Fragments/Book anthologies—with screenshots from the app.'
       },
       notFound: {
         pageTitle: '404',
@@ -255,7 +255,7 @@ const messages = {
       eyebrow: 'Document',
       title: 'Emprint—start from the beginning, step by step',
       intro:
-        'No coding background is needed. Follow the screens in order: install the app, prepare Node.js and Git, complete the setup wizard, create an anthology, work in the workspace, then publish when ready. Each step below includes a screenshot from the app.',
+        'No coding background is needed. Follow the screens in order: install the app, prepare Node.js and Git, complete the setup wizard, create an anthology, work inside it, then publish when ready. All five anthology formats include screenshots from the app.',
       sidebarTitle: 'On this page',
       sidebarAriaLabel: 'Documentation',
       navOverview: 'Getting started',
@@ -301,7 +301,7 @@ const messages = {
       document: {
         pageTitle: '문서',
         description:
-          'Emprint 화면별 가이드: 설치, Node.js·Git 준비, 설정 마법사, 앤솔로지 허브, 워크스페이스, 게시—앱 스크린샷 포함.'
+          'Emprint 화면별 가이드: 설치, Node.js·Git 준비, 설정 마법사, 앤솔로지 허브, Column/Memoir/Dictionary/Fragments/Book 앤솔로지—앱 스크린샷 포함.'
       },
       notFound: {
         pageTitle: '404',
@@ -518,7 +518,7 @@ const messages = {
       eyebrow: '문서',
       title: 'Emprint, 처음부터 따라하기',
       intro:
-        '개발 경험이 없어도 괜찮습니다. 설치 → Node.js·Git 준비 → 설정 마법사 → 앤솔로지 만들기 → 워크스페이스 → 게시 순으로 화면을 따라가면 됩니다. 각 단계에 앱 스크린샷이 붙어 있습니다.',
+        '개발 경험이 없어도 괜찮습니다. 설치 → Node.js·Git 준비 → 설정 마법사 → 앤솔로지 만들기 → 앤솔로지 안에서 작업 → 게시 순으로 화면을 따라가면 됩니다. 다섯 가지 앤솔로지 형식 모두 앱 스크린샷이 붙어 있습니다.',
       sidebarTitle: '목차',
       sidebarAriaLabel: '문서 섹션',
       navOverview: '시작하기',

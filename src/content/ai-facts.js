@@ -7,7 +7,7 @@ import siteData from '../data/site.js'
 import { brewCommands, scoopCommands } from '../data/install-commands.js'
 import { absoluteUrl } from '../utils/site-url.js'
 
-export const AI_LAST_UPDATED = '2026-05-19'
+export const AI_LAST_UPDATED = '2026-06-07'
 
 export function getCanonicalUrls() {
   return {

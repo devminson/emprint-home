@@ -376,6 +376,618 @@ const workspaceStepsKo = [
   }
 ]
 
+const dictionaryStepsEn = [
+  {
+    id: 'dict-index',
+    image: 'dictionary-index.png',
+    title: 'Open a Dictionary anthology',
+    body: 'After you create a Dictionary anthology, Contents opens—the index tree where topics and knowledge entries live.',
+    alt: 'Emprint Dictionary workspace after create'
+  },
+  {
+    id: 'dict-contents',
+    image: 'dictionary-contents.png',
+    title: 'Contents — index tree',
+    body: 'Contents shows the top-level index. Add segments (topics) that group your knowledge entries.',
+    alt: 'Emprint Dictionary Contents list'
+  },
+  {
+    id: 'dict-index-created',
+    image: 'dictionary-contents-index-created.png',
+    title: 'Contents — new index segment',
+    body: 'Create a top-level index segment, then add knowledge entries beneath it.',
+    alt: 'Emprint Dictionary Contents with new index segment'
+  },
+  {
+    id: 'dict-entry',
+    image: 'dictionary-contents-entry-editor.png',
+    title: 'Contents — knowledge editor',
+    body: 'Write and save knowledge entries tied to an index segment. Saved entries appear in the Contents tree.',
+    alt: 'Emprint Dictionary knowledge entry editor'
+  },
+  {
+    id: 'dict-drafts-list',
+    image: 'dictionary-drafts-list.png',
+    title: 'Drafts — work in progress',
+    body: 'Drafts holds knowledge still taking shape—the same list + editor pattern as Column drafts.',
+    alt: 'Emprint Dictionary Drafts list'
+  },
+  {
+    id: 'dict-drafts-editor',
+    image: 'dictionary-drafts-editor.png',
+    title: 'Drafts — editor',
+    body: 'Finish ideas in Drafts, then move toward Contents when ready to treat them as published knowledge.',
+    alt: 'Emprint Dictionary Drafts editor'
+  },
+  {
+    id: 'dict-assets',
+    image: 'dictionary-assets.png',
+    title: 'Assets',
+    body: 'Assets is the media library for this anthology. Refresh rescans the project folder.',
+    alt: 'Emprint Dictionary Assets'
+  },
+  {
+    id: 'dict-design',
+    image: 'dictionary-design-template.png',
+    title: 'Design — site look',
+    body: 'Pick a template, open preview in the browser (needs Node.js), or switch toward code mode when ready.',
+    alt: 'Emprint Dictionary Design template view'
+  },
+  {
+    id: 'dict-design-ai',
+    image: 'dictionary-design-ai-prompt-modal.png',
+    title: 'Design — AI prompt (optional)',
+    body: 'Optional AI-assisted styling opens in a modal; close when you are done experimenting.',
+    alt: 'Emprint Dictionary Design AI prompt modal'
+  },
+  {
+    id: 'dict-design-mode',
+    image: 'dictionary-design-switch-mode-modal.png',
+    title: 'Design — switch to code mode',
+    body: 'Switching to code mode asks for confirmation because it changes how you edit the site files.',
+    alt: 'Emprint Dictionary Design switch mode confirmation'
+  },
+  {
+    id: 'dict-imprint',
+    image: 'dictionary-imprint.png',
+    title: 'Imprint — publish history',
+    body: 'Imprint shows git publish history for this Dictionary anthology.',
+    alt: 'Emprint Dictionary Imprint history'
+  },
+  {
+    id: 'dict-settings',
+    image: 'dictionary-settings.png',
+    title: 'Settings — anthology studio',
+    body: 'Per-anthology metadata, GitHub connection, and studio options for this Dictionary site.',
+    alt: 'Emprint Dictionary Settings'
+  },
+  {
+    id: 'dict-publish',
+    image: 'dictionary-publish-dialog.png',
+    title: 'Publish dialog',
+    body: 'Publish from the sidebar opens a dialog to confirm message and branch before pushing to GitHub.',
+    alt: 'Emprint Dictionary publish dialog'
+  }
+]
+
+const dictionaryStepsKo = [
+  {
+    id: 'dict-index',
+    image: 'dictionary-index.png',
+    title: 'Dictionary 앤솔로지 열기',
+    body: 'Dictionary 앤솔로지를 만들면 Contents(색인·지식 트리)로 들어갑니다.',
+    alt: 'Emprint Dictionary 워크스페이스'
+  },
+  {
+    id: 'dict-contents',
+    image: 'dictionary-contents.png',
+    title: 'Contents — 색인 트리',
+    body: 'Contents에서 최상위 색인(토픽)을 보고 추가합니다.',
+    alt: 'Emprint Dictionary Contents'
+  },
+  {
+    id: 'dict-index-created',
+    image: 'dictionary-contents-index-created.png',
+    title: 'Contents — 새 색인',
+    body: '최상위 색인을 만든 뒤 그 아래에 지식 항목을 추가합니다.',
+    alt: 'Emprint Dictionary 새 색인'
+  },
+  {
+    id: 'dict-entry',
+    image: 'dictionary-contents-entry-editor.png',
+    title: 'Contents — 지식 편집기',
+    body: '색인에 연결된 지식 항목을 작성·저장합니다.',
+    alt: 'Emprint Dictionary 지식 편집기'
+  },
+  {
+    id: 'dict-drafts-list',
+    image: 'dictionary-drafts-list.png',
+    title: 'Drafts — 작성 중',
+    body: 'Drafts는 아직 다듬는 지식 항목을 위한 공간입니다.',
+    alt: 'Emprint Dictionary Drafts 목록'
+  },
+  {
+    id: 'dict-drafts-editor',
+    image: 'dictionary-drafts-editor.png',
+    title: 'Drafts — 편집기',
+    body: '초안은 Drafts에서, 마음에 들면 Contents로 옮깁니다.',
+    alt: 'Emprint Dictionary Drafts 편집기'
+  },
+  {
+    id: 'dict-assets',
+    image: 'dictionary-assets.png',
+    title: 'Assets',
+    body: '이미지 등 미디어를 모아 둡니다. Refresh로 폴더를 다시 읽습니다.',
+    alt: 'Emprint Dictionary Assets'
+  },
+  {
+    id: 'dict-design',
+    image: 'dictionary-design-template.png',
+    title: 'Design — 사이트 모양',
+    body: '템플릿 선택·미리보기(Node.js 필요)·코드 모드 전환을 할 수 있습니다.',
+    alt: 'Emprint Dictionary Design'
+  },
+  {
+    id: 'dict-design-ai',
+    image: 'dictionary-design-ai-prompt-modal.png',
+    title: 'Design — AI 프롬프트(선택)',
+    body: 'AI 스타일 도우미는 모달에서 열고 닫을 수 있습니다.',
+    alt: 'Emprint Dictionary Design AI 모달'
+  },
+  {
+    id: 'dict-design-mode',
+    image: 'dictionary-design-switch-mode-modal.png',
+    title: 'Design — 코드 모드 전환',
+    body: '코드 모드로 바꿀 때 확인 창이 뜹니다.',
+    alt: 'Emprint Dictionary 코드 모드 전환 확인'
+  },
+  {
+    id: 'dict-imprint',
+    image: 'dictionary-imprint.png',
+    title: 'Imprint — 게시 기록',
+    body: 'Dictionary 앤솔로지의 게시(git) 이력을 봅니다.',
+    alt: 'Emprint Dictionary Imprint'
+  },
+  {
+    id: 'dict-settings',
+    image: 'dictionary-settings.png',
+    title: 'Settings — 스튜디오 설정',
+    body: '이 Dictionary 앤솔로지의 메타데이터·GitHub·스튜디오 옵션입니다.',
+    alt: 'Emprint Dictionary Settings'
+  },
+  {
+    id: 'dict-publish',
+    image: 'dictionary-publish-dialog.png',
+    title: '게시 대화상자',
+    body: '사이드바 [Publish]로 메시지와 브랜치를 확인한 뒤 GitHub에 push합니다.',
+    alt: 'Emprint Dictionary 게시 대화상자'
+  }
+]
+
+const fragmentsStepsEn = [
+  {
+    id: 'frag-artwork-empty',
+    image: 'fragments-artwork-empty.png',
+    title: 'Artwork — empty gallery',
+    body: 'A new Fragments anthology opens on Artwork—your image gallery. Upload artwork to populate the grid.',
+    alt: 'Emprint Fragments Artwork empty state'
+  },
+  {
+    id: 'frag-artwork-grid',
+    image: 'fragments-artwork-grid.png',
+    title: 'Artwork — uploaded pieces',
+    body: 'Uploaded images appear as tiles. Select a piece to edit title, year, medium, tags, and caption.',
+    alt: 'Emprint Fragments Artwork grid'
+  },
+  {
+    id: 'frag-artwork-detail',
+    image: 'fragments-artwork-detail.png',
+    title: 'Artwork — detail editor',
+    body: 'Fill metadata for each piece—what visitors see in the public lightbox and index.',
+    alt: 'Emprint Fragments Artwork detail editor'
+  },
+  {
+    id: 'frag-design',
+    image: 'fragments-design-template.png',
+    title: 'Design — site look',
+    body: 'Design controls gallery layout and styling. Open preview in the browser when Node.js is installed.',
+    alt: 'Emprint Fragments Design template view'
+  },
+  {
+    id: 'frag-design-ai',
+    image: 'fragments-design-ai-prompt-modal.png',
+    title: 'Design — AI prompt (optional)',
+    body: 'Optional AI-assisted styling opens in a modal; close when you are done experimenting.',
+    alt: 'Emprint Fragments Design AI prompt modal'
+  },
+  {
+    id: 'frag-imprint',
+    image: 'fragments-imprint.png',
+    title: 'Imprint — publish history',
+    body: 'Imprint shows git publish history for this Fragments anthology.',
+    alt: 'Emprint Fragments Imprint history'
+  },
+  {
+    id: 'frag-settings',
+    image: 'fragments-settings.png',
+    title: 'Settings — anthology studio',
+    body: 'Per-anthology metadata, GitHub connection, and studio options for this gallery site.',
+    alt: 'Emprint Fragments Settings'
+  },
+  {
+    id: 'frag-publish',
+    image: 'fragments-publish-dialog.png',
+    title: 'Publish dialog',
+    body: 'Publish from the sidebar opens a dialog to confirm message and branch before pushing to GitHub.',
+    alt: 'Emprint Fragments publish dialog'
+  }
+]
+
+const fragmentsStepsKo = [
+  {
+    id: 'frag-artwork-empty',
+    image: 'fragments-artwork-empty.png',
+    title: 'Artwork — 빈 갤러리',
+    body: 'Fragments 앤솔로지를 만들면 Artwork(작품 갤러리)로 들어갑니다. 이미지를 업로드해 채웁니다.',
+    alt: 'Emprint Fragments Artwork 빈 상태'
+  },
+  {
+    id: 'frag-artwork-grid',
+    image: 'fragments-artwork-grid.png',
+    title: 'Artwork — 업로드된 작품',
+    body: '업로드한 이미지가 타일로 표시됩니다. 항목을 고르면 제목·연도·매체·태그·캡션을 편집합니다.',
+    alt: 'Emprint Fragments Artwork 그리드'
+  },
+  {
+    id: 'frag-artwork-detail',
+    image: 'fragments-artwork-detail.png',
+    title: 'Artwork — 상세 편집',
+    body: '각 작품의 메타데이터를 입력합니다—공개 갤러리·라이트박스에 보이는 정보입니다.',
+    alt: 'Emprint Fragments Artwork 상세 편집'
+  },
+  {
+    id: 'frag-design',
+    image: 'fragments-design-template.png',
+    title: 'Design — 사이트 모양',
+    body: '갤러리 레이아웃·스타일을 바꿉니다. Node.js가 있으면 미리보기를 열 수 있습니다.',
+    alt: 'Emprint Fragments Design'
+  },
+  {
+    id: 'frag-design-ai',
+    image: 'fragments-design-ai-prompt-modal.png',
+    title: 'Design — AI 프롬프트(선택)',
+    body: 'AI 스타일 도우미는 모달에서 열고 닫을 수 있습니다.',
+    alt: 'Emprint Fragments Design AI 모달'
+  },
+  {
+    id: 'frag-imprint',
+    image: 'fragments-imprint.png',
+    title: 'Imprint — 게시 기록',
+    body: 'Fragments 앤솔로지의 게시(git) 이력을 봅니다.',
+    alt: 'Emprint Fragments Imprint'
+  },
+  {
+    id: 'frag-settings',
+    image: 'fragments-settings.png',
+    title: 'Settings — 스튜디오 설정',
+    body: '이 Fragments 앤솔로지의 메타데이터·GitHub·스튜디오 옵션입니다.',
+    alt: 'Emprint Fragments Settings'
+  },
+  {
+    id: 'frag-publish',
+    image: 'fragments-publish-dialog.png',
+    title: '게시 대화상자',
+    body: '사이드바 [Publish]로 메시지와 브랜치를 확인한 뒤 GitHub에 push합니다.',
+    alt: 'Emprint Fragments 게시 대화상자'
+  }
+]
+
+const memoirStepsEn = [
+  {
+    id: 'mem-sections-open',
+    image: 'memoir-sections.png',
+    title: 'Open a Memoir anthology',
+    body: 'After you create a Memoir anthology, Sections opens—a portfolio-style list of pages you can search and edit.',
+    alt: 'Emprint Memoir anthology after create'
+  },
+  {
+    id: 'mem-sections-list',
+    image: 'memoir-sections-list.png',
+    title: 'Sections — page list',
+    body: 'Sections lists portfolio pages. Select a row to edit title and body, or search when the list grows.',
+    alt: 'Emprint Memoir Sections list'
+  },
+  {
+    id: 'mem-sections-search',
+    image: 'memoir-sections-search.png',
+    title: 'Sections — search',
+    body: 'Use search to filter sections by title when your portfolio has many pages.',
+    alt: 'Emprint Memoir Sections search'
+  },
+  {
+    id: 'mem-section-editor',
+    image: 'memoir-section-editor.png',
+    title: 'Sections — editor',
+    body: 'Edit section title and Markdown body. Save when the page on disk matches what you want.',
+    alt: 'Emprint Memoir section editor'
+  },
+  {
+    id: 'mem-section-saved',
+    image: 'memoir-section-saved.png',
+    title: 'Sections — saved',
+    body: 'After saving, the section title updates in the list so you can keep building the portfolio.',
+    alt: 'Emprint Memoir section saved'
+  },
+  {
+    id: 'mem-assets',
+    image: 'memoir-assets.png',
+    title: 'Assets',
+    body: 'Assets is the media library for this anthology. Refresh rescans the project folder.',
+    alt: 'Emprint Memoir Assets'
+  },
+  {
+    id: 'mem-design',
+    image: 'memoir-design-template.png',
+    title: 'Design — site look',
+    body: 'Pick a template and open preview in the browser when Node.js is installed.',
+    alt: 'Emprint Memoir Design template view'
+  },
+  {
+    id: 'mem-design-ai',
+    image: 'memoir-design-ai-prompt-modal.png',
+    title: 'Design — AI prompt (optional)',
+    body: 'Optional AI-assisted styling opens in a modal; close when you are done experimenting.',
+    alt: 'Emprint Memoir Design AI prompt modal'
+  },
+  {
+    id: 'mem-imprint',
+    image: 'memoir-imprint.png',
+    title: 'Imprint — publish history',
+    body: 'Imprint shows git publish history for this Memoir anthology.',
+    alt: 'Emprint Memoir Imprint history'
+  },
+  {
+    id: 'mem-settings',
+    image: 'memoir-settings.png',
+    title: 'Settings — anthology studio',
+    body: 'Per-anthology metadata, GitHub connection, and studio options for this portfolio site.',
+    alt: 'Emprint Memoir Settings'
+  },
+  {
+    id: 'mem-publish',
+    image: 'memoir-publish-dialog.png',
+    title: 'Publish dialog',
+    body: 'Publish from the sidebar opens a dialog to confirm message and branch before pushing to GitHub.',
+    alt: 'Emprint Memoir publish dialog'
+  }
+]
+
+const memoirStepsKo = [
+  {
+    id: 'mem-sections-open',
+    image: 'memoir-sections.png',
+    title: 'Memoir 앤솔로지 열기',
+    body: 'Memoir 앤솔로지를 만들면 Sections(포트폴리오 페이지 목록)로 들어갑니다.',
+    alt: 'Emprint Memoir 앤솔로지'
+  },
+  {
+    id: 'mem-sections-list',
+    image: 'memoir-sections-list.png',
+    title: 'Sections — 페이지 목록',
+    body: 'Sections에서 포트폴리오 페이지를 보고, 항목을 고른 뒤 편집합니다.',
+    alt: 'Emprint Memoir Sections 목록'
+  },
+  {
+    id: 'mem-sections-search',
+    image: 'memoir-sections-search.png',
+    title: 'Sections — 검색',
+    body: '페이지가 많아지면 제목으로 검색해 필터링할 수 있습니다.',
+    alt: 'Emprint Memoir Sections 검색'
+  },
+  {
+    id: 'mem-section-editor',
+    image: 'memoir-section-editor.png',
+    title: 'Sections — 편집기',
+    body: '섹션 제목과 Markdown 본문을 편집하고 저장합니다.',
+    alt: 'Emprint Memoir 섹션 편집기'
+  },
+  {
+    id: 'mem-section-saved',
+    image: 'memoir-section-saved.png',
+    title: 'Sections — 저장됨',
+    body: '저장하면 목록의 제목이 갱신됩니다.',
+    alt: 'Emprint Memoir 섹션 저장'
+  },
+  {
+    id: 'mem-assets',
+    image: 'memoir-assets.png',
+    title: 'Assets',
+    body: '이미지 등 미디어를 모아 둡니다. Refresh로 폴더를 다시 읽습니다.',
+    alt: 'Emprint Memoir Assets'
+  },
+  {
+    id: 'mem-design',
+    image: 'memoir-design-template.png',
+    title: 'Design — 사이트 모양',
+    body: '템플릿을 고르고 Node.js가 있으면 미리보기를 열 수 있습니다.',
+    alt: 'Emprint Memoir Design'
+  },
+  {
+    id: 'mem-design-ai',
+    image: 'memoir-design-ai-prompt-modal.png',
+    title: 'Design — AI 프롬프트(선택)',
+    body: 'AI 스타일 도우미는 모달에서 열고 닫을 수 있습니다.',
+    alt: 'Emprint Memoir Design AI 모달'
+  },
+  {
+    id: 'mem-imprint',
+    image: 'memoir-imprint.png',
+    title: 'Imprint — 게시 기록',
+    body: 'Memoir 앤솔로지의 게시(git) 이력을 봅니다.',
+    alt: 'Emprint Memoir Imprint'
+  },
+  {
+    id: 'mem-settings',
+    image: 'memoir-settings.png',
+    title: 'Settings — 스튜디오 설정',
+    body: '이 Memoir 앤솔로지의 메타데이터·GitHub·스튜디오 옵션입니다.',
+    alt: 'Emprint Memoir Settings'
+  },
+  {
+    id: 'mem-publish',
+    image: 'memoir-publish-dialog.png',
+    title: '게시 대화상자',
+    body: '사이드바 [Publish]로 메시지와 브랜치를 확인한 뒤 GitHub에 push합니다.',
+    alt: 'Emprint Memoir 게시 대화상자'
+  }
+]
+
+const bookStepsEn = [
+  {
+    id: 'book-story-open',
+    image: 'book-story.png',
+    title: 'Open a Book anthology',
+    body: 'After you create a Book anthology, Story opens—a single long-form narrative with paginated reading on the published site.',
+    alt: 'Emprint Book anthology after create'
+  },
+  {
+    id: 'book-story-initial',
+    image: 'book-story-initial.png',
+    title: 'Story — start writing',
+    body: 'Story holds title, description, and Markdown body for the whole book in one editor.',
+    alt: 'Emprint Book Story initial view'
+  },
+  {
+    id: 'book-story-saved',
+    image: 'book-story-saved.png',
+    title: 'Story — saved draft',
+    body: 'Save title, description, and body as you shape the narrative.',
+    alt: 'Emprint Book Story saved'
+  },
+  {
+    id: 'book-story-page-break',
+    image: 'book-story-page-break.png',
+    title: 'Story — page breaks',
+    body: 'Insert `---` page breaks in Markdown so readers turn pages through chapters on the published site.',
+    alt: 'Emprint Book Story with page break'
+  },
+  {
+    id: 'book-design',
+    image: 'book-design-template.png',
+    title: 'Design — site look',
+    body: 'Design controls typography, palette, and layout—including scroll vs paginated reading modes.',
+    alt: 'Emprint Book Design template view'
+  },
+  {
+    id: 'book-story-scroll',
+    image: 'book-story-scroll-layout.png',
+    title: 'Story — scroll layout',
+    body: 'After choosing scroll layout in Design, Story shows the active layout label so you know how readers will move through the book.',
+    alt: 'Emprint Book Story scroll layout'
+  },
+  {
+    id: 'book-design-ai',
+    image: 'book-design-ai-prompt-modal.png',
+    title: 'Design — AI prompt (optional)',
+    body: 'Optional AI-assisted styling opens in a modal; close when you are done experimenting.',
+    alt: 'Emprint Book Design AI prompt modal'
+  },
+  {
+    id: 'book-imprint',
+    image: 'book-imprint.png',
+    title: 'Imprint — publish history',
+    body: 'Imprint shows git publish history for this Book anthology.',
+    alt: 'Emprint Book Imprint history'
+  },
+  {
+    id: 'book-settings',
+    image: 'book-settings.png',
+    title: 'Settings — anthology studio',
+    body: 'Per-anthology metadata, GitHub connection, and studio options for this book site.',
+    alt: 'Emprint Book Settings'
+  },
+  {
+    id: 'book-publish',
+    image: 'book-publish-dialog.png',
+    title: 'Publish dialog',
+    body: 'Publish from the sidebar opens a dialog to confirm message and branch before pushing to GitHub.',
+    alt: 'Emprint Book publish dialog'
+  }
+]
+
+const bookStepsKo = [
+  {
+    id: 'book-story-open',
+    image: 'book-story.png',
+    title: 'Book 앤솔로지 열기',
+    body: 'Book 앤솔로지를 만들면 Story(한 편의 긴 이야기)로 들어갑니다. 게시 사이트에서는 페이지를 넘기며 읽습니다.',
+    alt: 'Emprint Book 앤솔로지'
+  },
+  {
+    id: 'book-story-initial',
+    image: 'book-story-initial.png',
+    title: 'Story — 글쓰기 시작',
+    body: 'Story에서 제목·설명·Markdown 본문을 한 편집기에서 다룹니다.',
+    alt: 'Emprint Book Story 초기 화면'
+  },
+  {
+    id: 'book-story-saved',
+    image: 'book-story-saved.png',
+    title: 'Story — 저장됨',
+    body: '제목·설명·본문을 저장하며 이야기를 다듬습니다.',
+    alt: 'Emprint Book Story 저장'
+  },
+  {
+    id: 'book-story-page-break',
+    image: 'book-story-page-break.png',
+    title: 'Story — 페이지 나누기',
+    body: 'Markdown에 `---` 페이지 구분을 넣으면 게시 사이트에서 챕터처럼 넘겨 읽을 수 있습니다.',
+    alt: 'Emprint Book Story 페이지 구분'
+  },
+  {
+    id: 'book-design',
+    image: 'book-design-template.png',
+    title: 'Design — 사이트 모양',
+    body: '타이포·색·레이아웃을 바꿉니다. 스크롤·페이지 넘김 읽기 모드를 고를 수 있습니다.',
+    alt: 'Emprint Book Design'
+  },
+  {
+    id: 'book-story-scroll',
+    image: 'book-story-scroll-layout.png',
+    title: 'Story — 스크롤 레이아웃',
+    body: 'Design에서 스크롤 레이아웃을 고르면 Story에 현재 레이아웃이 표시됩니다.',
+    alt: 'Emprint Book Story 스크롤 레이아웃'
+  },
+  {
+    id: 'book-design-ai',
+    image: 'book-design-ai-prompt-modal.png',
+    title: 'Design — AI 프롬프트(선택)',
+    body: 'AI 스타일 도우미는 모달에서 열고 닫을 수 있습니다.',
+    alt: 'Emprint Book Design AI 모달'
+  },
+  {
+    id: 'book-imprint',
+    image: 'book-imprint.png',
+    title: 'Imprint — 게시 기록',
+    body: 'Book 앤솔로지의 게시(git) 이력을 봅니다.',
+    alt: 'Emprint Book Imprint'
+  },
+  {
+    id: 'book-settings',
+    image: 'book-settings.png',
+    title: 'Settings — 스튜디오 설정',
+    body: '이 Book 앤솔로지의 메타데이터·GitHub·스튜디오 옵션입니다.',
+    alt: 'Emprint Book Settings'
+  },
+  {
+    id: 'book-publish',
+    image: 'book-publish-dialog.png',
+    title: '게시 대화상자',
+    body: '사이드바 [Publish]로 메시지와 브랜치를 확인한 뒤 GitHub에 push합니다.',
+    alt: 'Emprint Book 게시 대화상자'
+  }
+]
+
 const publishStepsEn = [
   {
     id: 'pub-dialog',
@@ -411,6 +1023,13 @@ const publishStepsEn = [
     title: 'Return to hub',
     body: 'Use the title bar control to return to the Anthology hub and switch projects or create another anthology.',
     alt: 'Emprint hub after returning from workspace'
+  },
+  {
+    id: 'pub-remove',
+    image: 'hub-remove-anthology-modal.png',
+    title: 'Remove anthology (optional)',
+    body: 'From the hub list, Remove anthology opens a confirmation dialog. Cancel keeps the project on disk until you confirm removal.',
+    alt: 'Emprint remove anthology confirmation'
   }
 ]
 
@@ -449,6 +1068,13 @@ const publishStepsKo = [
     title: '허브로 돌아가기',
     body: '제목 표시줄에서 허브로 돌아가 다른 앤솔로지를 열 수 있습니다.',
     alt: 'Emprint 허브로 복귀'
+  },
+  {
+    id: 'pub-remove',
+    image: 'hub-remove-anthology-modal.png',
+    title: '앤솔로지 제거(선택)',
+    body: '허브 목록에서 [Remove anthology]를 누르면 확인 창이 뜹니다. [취소]하면 프로젝트는 그대로 남습니다.',
+    alt: 'Emprint 앤솔로지 제거 확인'
   }
 ]
 
@@ -476,15 +1102,16 @@ export const documentSectionsEn = [
     title: 'Anthology hub',
     summary:
       'After setup, the hub is home base: pick an anthology or create a new site (Column, Memoir, Dictionary, Fragments, or Book).',
-    body: 'Creating a Column anthology opens the workspace tour in the next section; other formats use their own sidebar sections.',
+    body:
+      'Creating a Column anthology opens the tour in the next section. Memoir, Dictionary, Fragments, and Book each have their own section below with matching screenshots.',
     steps: hubStepsEn
   },
   {
     id: 'workspace',
-    navLabel: 'Workspace',
-    title: 'Inside the workspace (Column)',
+    navLabel: 'Anthology (Column)',
+    title: 'Column anthology',
     summary:
-      'A Column anthology workspace has six sections in the sidebar—Posts, Drafts, Assets, Design, Imprint, and Settings.',
+      'A Column anthology has six sections in the sidebar—Posts, Drafts, Assets, Design, Imprint, and Settings.',
     body:
       'Keyboard shortcuts 1–6 jump between sections. The flow below matches a typical writing → design → publish path.',
     bullets: [
@@ -494,9 +1121,65 @@ export const documentSectionsEn = [
     steps: workspaceStepsEn
   },
   {
+    id: 'workspace-dictionary',
+    navLabel: 'Anthology (Dictionary)',
+    title: 'Dictionary anthology',
+    summary:
+      'A Dictionary anthology has six sections—Contents, Drafts, Assets, Design, Imprint, and Settings.',
+    body:
+      'Contents is an index tree: create top-level segments, then add knowledge entries. The flow below matches a typical index → draft → design → publish path.',
+    bullets: [
+      'Footer actions include Update (pull), Reset draft, and Publish when Git is linked.',
+      'Design → Open preview needs Node.js installed.'
+    ],
+    steps: dictionaryStepsEn
+  },
+  {
+    id: 'workspace-fragments',
+    navLabel: 'Anthology (Fragments)',
+    title: 'Fragments anthology',
+    summary:
+      'A Fragments anthology has four sections—Artwork, Design, Imprint, and Settings.',
+    body:
+      'Artwork is your gallery: upload images, edit metadata, then tune layout in Design before publishing.',
+    bullets: [
+      'Upload artwork from Artwork; metadata drives the public lightbox.',
+      'Publish pushes the gallery site to the linked GitHub repository.'
+    ],
+    steps: fragmentsStepsEn
+  },
+  {
+    id: 'workspace-memoir',
+    navLabel: 'Anthology (Memoir)',
+    title: 'Memoir anthology',
+    summary:
+      'A Memoir anthology has five sections—Sections, Assets, Design, Imprint, and Settings.',
+    body:
+      'Sections is a searchable portfolio of pages. The flow below matches edit → design → publish.',
+    bullets: [
+      'Search filters section titles when your portfolio grows.',
+      'Publish pushes the portfolio site to the linked GitHub repository.'
+    ],
+    steps: memoirStepsEn
+  },
+  {
+    id: 'workspace-book',
+    navLabel: 'Anthology (Book)',
+    title: 'Book anthology',
+    summary:
+      'A Book anthology has four sections—Story, Design, Imprint, and Settings.',
+    body:
+      'Story is one long Markdown narrative. Use page breaks and Design layout options so readers turn pages on the published site.',
+    bullets: [
+      'Insert `---` in Story for chapter-style page breaks.',
+      'Design can switch between scroll and paginated reading layouts.'
+    ],
+    steps: bookStepsEn
+  },
+  {
     id: 'publish',
     navLabel: 'Publish',
-    title: 'Publish and return to hub',
+    title: 'Publish and return to hub (Column)',
     summary:
       'When writing is ready, Publish pushes commits to GitHub; Imprint records the trace.',
     body: 'Git must be installed and GitHub connected. Publishing is per anthology repository.',
@@ -527,15 +1210,16 @@ export const documentSectionsKo = [
     title: '앤솔로지 허브',
     summary:
       '설정 후 허브에서 앤솔로지를 열거나 새로 만듭니다(Column·Memoir·Dictionary·Fragments·Book).',
-    body: 'Column 앤솔로지를 만들면 다음 섹션의 워크스페이스로 들어갑니다. 다른 형식은 각자의 사이드바 섹션을 사용합니다.',
+    body:
+      'Column 앤솔로지를 만들면 다음 섹션으로 들어갑니다. Memoir·Dictionary·Fragments·Book은 아래 전용 섹션에 스크린샷이 있습니다.',
     steps: hubStepsKo
   },
   {
     id: 'workspace',
-    navLabel: '워크스페이스',
-    title: '워크스페이스 안 (Column)',
+    navLabel: '앤솔로지 (Column)',
+    title: 'Column 앤솔로지',
     summary:
-      'Column 워크스페이스 사이드바: Posts, Drafts, Assets, Design, Imprint, Settings.',
+      'Column 앤솔로지 사이드바: Posts, Drafts, Assets, Design, Imprint, Settings.',
     body: '단축키 1–6으로 섹션을 바꿀 수 있습니다. 아래는 글쓰기→디자인→게시 흐름입니다.',
     bullets: [
       '하단에 Update(pull), Reset draft, Publish가 있습니다.',
@@ -544,9 +1228,65 @@ export const documentSectionsKo = [
     steps: workspaceStepsKo
   },
   {
+    id: 'workspace-dictionary',
+    navLabel: '앤솔로지 (Dictionary)',
+    title: 'Dictionary 앤솔로지',
+    summary:
+      'Dictionary 앤솔로지 사이드바: Contents, Drafts, Assets, Design, Imprint, Settings.',
+    body:
+      'Contents는 색인 트리입니다. 최상위 색인을 만든 뒤 지식 항목을 추가합니다. 아래는 색인→초안→디자인→게시 흐름입니다.',
+    bullets: [
+      '하단에 Update(pull), Reset draft, Publish가 있습니다.',
+      'Design 미리보기는 Node.js가 필요합니다.'
+    ],
+    steps: dictionaryStepsKo
+  },
+  {
+    id: 'workspace-fragments',
+    navLabel: '앤솔로지 (Fragments)',
+    title: 'Fragments 앤솔로지',
+    summary:
+      'Fragments 앤솔로지 사이드바: Artwork, Design, Imprint, Settings.',
+    body:
+      'Artwork에서 이미지를 업로드·메타데이터를 편집한 뒤 Design에서 레이아웃을 조정하고 게시합니다.',
+    bullets: [
+      'Artwork에서 작품을 올리고 제목·캡션 등을 입력합니다.',
+      'Publish로 갤러리 사이트를 GitHub에 push합니다.'
+    ],
+    steps: fragmentsStepsKo
+  },
+  {
+    id: 'workspace-memoir',
+    navLabel: '앤솔로지 (Memoir)',
+    title: 'Memoir 앤솔로지',
+    summary:
+      'Memoir 앤솔로지 사이드바: Sections, Assets, Design, Imprint, Settings.',
+    body:
+      'Sections는 검색 가능한 포트폴리오 페이지 목록입니다. 아래는 편집→디자인→게시 흐름입니다.',
+    bullets: [
+      '검색으로 섹션 제목을 필터링할 수 있습니다.',
+      'Publish로 포트폴리오 사이트를 GitHub에 push합니다.'
+    ],
+    steps: memoirStepsKo
+  },
+  {
+    id: 'workspace-book',
+    navLabel: '앤솔로지 (Book)',
+    title: 'Book 앤솔로지',
+    summary:
+      'Book 앤솔로지 사이드바: Story, Design, Imprint, Settings.',
+    body:
+      'Story는 한 편의 긴 Markdown 이야기입니다. 페이지 구분과 Design 레이아웃으로 게시 사이트에서 넘겨 읽게 할 수 있습니다.',
+    bullets: [
+      'Story에 `---`를 넣어 챕터처럼 페이지를 나눕니다.',
+      'Design에서 스크롤·페이지 넘김 레이아웃을 고릅니다.'
+    ],
+    steps: bookStepsKo
+  },
+  {
     id: 'publish',
     navLabel: '게시',
-    title: '게시하고 허브로 돌아가기',
+    title: '게시하고 허브로 돌아가기 (Column)',
     summary: 'Publish로 GitHub에 push하고 Imprint에 기록이 남습니다.',
     body: 'Git 설치와 GitHub 연결이 필요합니다.',
     steps: publishStepsKo

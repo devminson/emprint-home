@@ -1,6 +1,6 @@
 EMPRINT — FULL SITE MIRROR FOR AI SYSTEMS
 ==========================================
-Last updated: 2026-05-19
+Last updated: 2026-06-07
 Version: 0.3.0
 
 Emprint is a desktop app for macOS and Windows that keeps your writing, design, and site files on your computer, uses Git for history, and lets you publish to your own site through GitHub when you are ready. It is not a social feed or algorithmic platform—it is a personal archive organized into anthologies (separate sites you own).
